@@ -10,7 +10,8 @@ function NewTaskForm() {
       <label>
         Category
         <select name="category">
-          {/* render <option> elements for each category here */}
+        <TaskForm categories={categories} onTaskFormSubmit={handleTaskFormSubmit} />
+      <TaskList tasks={tasks} />
         </select>
       </label>
       <input type="submit" value="Add task" />
